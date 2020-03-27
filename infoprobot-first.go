@@ -53,3 +53,4 @@ for update := range updates {
     msg.ReplyToMessageID = update.Message.MessageID
     bot.Send(msg)
 }
+}
