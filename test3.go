@@ -77,9 +77,9 @@ func GetStockQuotes(symbols []string, dataFormat ...int) (quotes string, err err
 	}
 
 	 arr := strings.SplitAfter(string(buf), ":")
-	 arr = strings.SplitAfter(arr[2], ".")
+	 //arr = strings.SplitAfter(arr[2], ".")
 
-    quotes = arr[0]
+    quotes = arr[2]
 	return
 }
 
